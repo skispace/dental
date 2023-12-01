@@ -1,0 +1,44 @@
+/* Applied particular google font from CDN to entire body  */
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* outer glow of header icons */
+
+.glow-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .glow {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f7f8; /* Set your desired background color */
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #3498db, 0 0 2em #3498db, 0 0 3em #3498db;
+    animation: glowEffect 1.5s ease-in-out infinite;
+  }
+
+  @keyframes glowEffect {
+    0% {
+      box-shadow: 0 0 1em #3498db, 0 0 2em #3498db, 0 0 3em #3498db;
+    }
+    50% {
+      box-shadow: 0 0 2em #3498db, 0 0 3em #3498db, 0 0 4em #3498db;
+    }
+    100% {
+      box-shadow: 0 0 1em #3498db, 0 0 2em #3498db, 0 0 3em #3498db;
+    }
+  }
+
+
+
+
+
+
+
+
+
