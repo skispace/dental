@@ -31,72 +31,105 @@
 <body>
 
 
-  <header class="header fixed-top bg-body-tertiary z-index: 100 ">
+  <header class="header fixed-top bg-body-tertiary z-index: 100>
 
-    <div class="container-fluid">
+    <div class=" container-fluid">
+    <div class=" row">
+      <!-- header left div -->
+      <div class="col-6 col-sm-4 col-lg-3 d-flex align-items-center justify-content-center">
 
-      <div class="row">
-        <!-- header left div -->
-        <div class="col-6 col-sm-4 col-lg-3 d-flex align-items-center justify-content-center">
+        <a href="index.html">
+          <img src="Assets/img/logo-txt copy.png" alt="" class="img-fluid">
+        </a>
 
-          <a href="index.html">
-            <img src="Assets/img/logo-txt copy.png" alt="" class="img-fluid">
-          </a>
+      </div>
 
-        </div>
+      <!-- header right div containing 2 rows -->
+      <div class="col-6 col-sm-8 col-lg-9">
+        <div class="container-fluid" style="height: 100%;">
 
-        <!-- header right div containing 2 rows -->
-        <div class="col-6 col-sm-8 col-lg-9">
-          <div class="container-fluid">
+          <!-- contact icon row (phone, whatsapp, mail)-->
+          <div class="row glow-container" style="height: 25%;">
 
-            <!-- contact icon row (phone, whatsapp, mail)-->
-            <div class="row glow-container">
-              <div class="col border m-1 text-center glow">
-                <a href="tel:+919947503040" class="text-primary text-decoration-none">
-                  <i class="bi bi-telephone"></i>
-                  <!-- hides phone number in screens below lg size -->
-                  <span class="d-none d-lg-inline">+91 9947503040</span>
-                </a>
-              </div>
-              <div class="col border m-1 text-center glow">
-                <a href="https://wa.me/+919880642247" class="text-success text-decoration-none">
-                  <i class="bi bi-whatsapp"></i>
-                  <!-- hides text in span in screens below lg size -->
-                  <span class="d-none d-lg-inline">chat on WhatsApp</span>
-                </a>
-              </div>
-              <div class="col border m-1 text-center glow">
-                <a href="mailto:elegantdhc@gmail.com" class="text-danger text-decoration-none">
-                  <i class="bi bi-envelope-at"></i>
-                  <!-- hides email in screens below lg size -->
-                  <span class="d-none d-lg-inline">elegantdhc@gmail.com</span>
-                </a>
-              </div>
+
+
+            <div class="col border m-1 text-center glow">
+              <a href="tel:+919947503040" class="text-primary text-decoration-none">
+                <i class="bi bi-telephone"></i>
+                <!-- hides phone number in screens below lg size -->
+                <span class="d-none d-lg-inline">+91 9947503040</span>
+              </a>
+
             </div>
 
-            <!-- Nav-bar row -->
-            <div class="row">
-            
-              <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <span class="navbar-text d-none d-lg-inline mx-1">
-                    Visiting Hours: <span style="color: #f58a4d; font-weight: 100;">Monday-Saturday: 10am-6pm;  Sunday closed</span>
-                  </span>
-                  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto mb-lg-0 border drop-down" >
+            <div class="col border m-1 text-center glow">
+              <a href="https://wa.me/+919947503040" class="text-success text-decoration-none">
+                <i class="bi bi-whatsapp"></i>
+                <!-- hides text in span in screens below lg size -->
+                <span class="d-none d-lg-inline">chat on WhatsApp</span>
+              </a>
+            </div>
+            <div class="col border m-1 text-center glow">
+              <a href="mailto:elegantdhc@gmail.com" class="text-danger text-decoration-none ">
+                <i class="bi bi-envelope-at"></i>
+                <!-- hides email in screens below lg size -->
+                <span class="d-none d-lg-inline">elegantdhc@gmail.com</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Nav-bar row -->
+          <div class="row pt-3">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+              <div class="container-fluid justify-content-end">
+                <!--<a class="navbar-brand" href="#">Offcanvas navbar</a>   -->
+
+                <!--toggle btn-->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel">
+
+                  <!--offcanvas header-->
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Let's get started..</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <!--offcanvas body-->
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-4">
+                      <!--Menu Items without drop-down-->
                       <li class="nav-item">
-                        <a class="nav-link active mx-1" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link mx-1" href="#">About</a>
+                        <a class="nav-link" href="#">About</a>
                       </li>
+                      <!--Menu Items with drop-down-->
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Specialities
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Dental Implants</a></li>
+                          <li><a class="dropdown-item" href="#">Orthodontics</a></li>
+                          <li><a class="dropdown-item" href="#">Root-canal Treament</a></li>
+                          <li><a class="dropdown-item" href="#">Cosmetic Dentistry</a></li>
+
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">View All</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                           aria-expanded="false">
                           Gallery
                         </a>
@@ -106,41 +139,34 @@
                           <li>
                             <hr class="dropdown-divider">
                           </li>
-                          <li><a class="dropdown-item" href="#">View all</a></li>
+                          <li><a class="dropdown-item" href="#">View All</a></li>
                         </ul>
                       </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-1" href="#" role="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Specialities
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Cosmetic Dentistry</a></li>
-                          <li><a class="dropdown-item" href="#">Dental Implants</a></li>
-                          <li><a class="dropdown-item" href="#">Orthodontics</a></li>
-                          <li><a class="dropdown-item" href="#">Root Canal Treatment</a></li>
-                          <li><a class="dropdown-item" href="#">Invisalign</a></li>
-                          <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="#">View all</a></li>
-                        </ul>
+
+                      <!--FAQ, Career, Testimonials-->
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link mx-1" href="#">Contact</a>
+                        <a class="nav-link" href="#">FAQs</a>
                       </li>
+
                     </ul>
+                    <hr>
+                    <button class="btn btn-success rounded-4" type="submit">Book Appointment</button>
 
                   </div>
                 </div>
-              </nav>
+              </div>
+            </nav>
 
-            </div>
           </div>
-
-
         </div>
+
+
       </div>
+    </div>
+    </div>
 
     </div>
   </header>
