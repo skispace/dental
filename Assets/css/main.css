@@ -43,6 +43,7 @@ body{
 
 
   /* Setting custom width other than sm, lg etc for hiding a text  */
+  /*
   @media (max-width:409px){
     .iphone-width {
       display: none;
@@ -54,6 +55,10 @@ body{
     }}
    }
 
+
+   not in use since I reduced the amount of text  */
+
+   
 
 
 
