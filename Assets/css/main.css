@@ -66,6 +66,15 @@ body{
     }
   }
 
+  .card-pop{
+    transition: transform 0.3s;
+    border-color: rgba(108, 117, 125, 0.5);
+  }
+  .card-pop:hover {
+    transform: scale(1.05);
+    border-color: rgb(45, 45, 45);
+  }
+
 
 
 
