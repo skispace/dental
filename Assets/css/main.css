@@ -60,6 +60,11 @@ body{
 
    
 
+   @media (min-width: 992px) {
+    .text-lg-increased {
+      font-size: 1.7rem; /* Adjust the font size as needed */
+    }
+  }
 
 
 
