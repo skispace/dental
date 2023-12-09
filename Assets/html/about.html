@@ -2,51 +2,340 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="icon" href="../img/logo/Elegant favicon.png">
-    <!--Bootstrap CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Dental Care</title>
+
+  <!--icon-->
+  <link rel="icon" href="../img/logo/Elegant favicon.png">
+
+  <!--Bootstrap CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
 
 </head>
 
-<body class="bg-light">
 
-    <header class="text-center" id="about">
 
-        <div class="container">
 
-            <img src="../img/logo-txt.png" alt="" class="w-50">
+<body>
 
-            <h1 class="text-primary m-3">Who we are!</h1>
 
-            <a href="../../index.html" class="btn btn-outline-danger">go to Home Page</a>
-           
+  <header class="header fixed-top bg-body-tertiary z-index: 100">
+
+    <div class=" container-fluid">
+      <div class=" row">
+        <!-- header left div -->
+        <div class="col-6 col-sm-4 col-lg-3 d-flex align-items-center justify-content-center">
+
+          <a href="../../index.html">
+            <img src="../img/logo/Elegant Logo full.png" alt="" class="img-fluid" style="max-height: 8em">
+          </a>
+
         </div>
-    </header>
 
-    <section>
-        <div class="container">
-            <div class="col p-4 border border-3 border-primary text-dark mt-5 text-center fs-4" id="implants">
+        <!-- header right div containing 2 rows -->
+        <div class="col-6 col-sm-8 col-lg-9">
+          <div class="container-fluid" style="height: 100%;">
 
-                <h3>Our legacy</h3>
-                <p>1. History<br>2. Founder <br>3. Vision <br> 4. Mission <br>5.Why us? <br>6. Awards & Recognitions <br>7. & more..</p>
-                
-                <a href="../../index.html" class="btn btn-success">go to Home Page</a>
+            <!-- contact icon row (phone, whatsapp, mail)-->
+            <div class="row glow-container" style="height: 25%;">
+
+
+
+              <div class="col border m-1 text-center glow">
+                <a href="tel:+919947503040" class="text-primary text-decoration-none">
+                  <i class="bi bi-telephone"></i>
+                  <!-- hides phone number in screens below lg size -->
+                  <span class="d-none d-lg-inline">+91 9947503040</span>
+                </a>
+
+              </div>
+
+              <div class="col border m-1 text-center glow">
+                <a href="https://wa.me/+919947503040" class="text-success text-decoration-none">
+                  <i class="bi bi-whatsapp"></i>
+                  <!-- hides text in span in screens below lg size -->
+                  <span class="d-none d-lg-inline">chat on WhatsApp</span>
+                </a>
+              </div>
+              <div class="col border m-1 text-center glow">
+                <a href="mailto:elegantdhc@gmail.com" class="text-danger text-decoration-none ">
+                  <i class="bi bi-envelope-at"></i>
+                  <!-- hides email in screens below lg size -->
+                  <span class="d-none d-lg-inline">elegantdhc@gmail.com</span>
+                </a>
+              </div>
+
             </div>
-            
+
+            <!-- Nav-bar row -->
+            <div class="row pt-3">
+
+              <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid justify-content-end">
+                  <!--<a class="navbar-brand" href="#">Offcanvas navbar</a>   -->
+
+                  <!--toggle btn-->
+                  <button class="navbar-toggler shadow-none border-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <!--offcanvas header-->
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">Let's get started..</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!--offcanvas body-->
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-center flex-grow-1 pe-4">
+                        <!--Menu Items without drop-down-->
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../html/about.html">About</a>
+                        </li>
+                        <!--Menu Items with drop-down-->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="../html/services.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Specialities
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/services.html#implants">Dental Implants</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../html/services.html#implants">Orthodontics</a></li>
+                            <li><a class="dropdown-item" href="../html/services.html#root-canal">Root-canal
+                                Treament</a></li>
+                            <li><a class="dropdown-item" href="../html/services.html#dental-align">Cosmetic
+                                Dentistry</a></li>
+
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../html/services.html">View All</a></li>
+                          </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="../html/gallery.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/gallery.html#photos">Photos</a></li>
+                            <li><a class="dropdown-item" href="../html/gallery.html#videos">Videos</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../html/gallery.html">View All</a></li>
+                          </ul>
+                        </li>
+
+                        <!--FAQ, Career, Testimonials-->
+                        <li class="nav-item">
+                          <a class="nav-link" href="../html/gallery.html#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../html/services.html#faq">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../html/about.html#contact">Contact</a>
+                        </li>
+
+
+                      </ul>
+                      <hr>
+                      <a href="../../index.html#appointment" class="btn btn-danger rounded-4">Book Appointment</a>
+
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+            </div>
+          </div>
+
+
         </div>
-    </section>
+      </div>
+    </div>
+
+    </div>
+  </header>
+
+
+  <section style="margin-top: 9rem;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h1 class="text-primary">Who we are!</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h3>History</h3>
+
+          <p class="bulk-text-justify">
+            Since our establishment on December 1, 2007, nestled in the heart of Mukkola, Vizhinjam, our dental clinic
+            has become a cornerstone of oral health for the past 16 years. Situated conveniently close to the
+            picturesque destination of Kovalam, we've had the privilege of serving a diverse clientele, including
+            tourists from various parts of the world.
+            <br>
+            Our enduring presence has allowed us to build lasting relationships within the Vizhinjam locality, fostering
+            trust and community bonds. Over the years, we have become a trusted destination not only for locals but also
+            for individuals from different parts of Trivandrum and neighboring districts seeking quality dental care. We
+            take pride in our role as a beacon of oral health, offering personalized and comprehensive services to all
+            those who walk through our doors.
+          </p>
+          <h3>ISO Certification</h3>
+          <p class="bulk-text-justify">We take pride in our commitment to quality, as evidenced by our ISO 9001:2015
+            certification. This
+            certification underscores our dedication to providing high standards of dental care and ensuring the
+            satisfaction and well-being of all our patients.</p>
+          <h3>Vision</h3>
+          <p class="bulk-text-justify">
+            Elegance Dental Clinic and Implant Centre envisions a pioneering role in oral healthcare, delivering
+            cutting-edge, personalized solutions with a touch of elegance. We strive to be synonymous with excellence,
+            blending innovation, compassion, and affordability for a lasting impact on our patients' well-being and
+            confidence.</p>
+          <h3>Mission</h3>
+          <p class="bulk-text-justify">Our mission is to provide unparalleled dental care through clinical expertise,
+            advanced technology, and
+            patient-centric service. We create a welcoming environment where individuals feel valued on their path to
+            optimal oral health. Elegance Dental Clinic and Implant Centre aim to empower the community with knowledge
+            and tools for enduring smiles, offering refined care that combines sophistication with affordability and
+            accessibility.
+          </p>
+
+        </div>
+        <div class="col-lg-6" >
+          <div class="text-center p-3" id="founder">
+            <img src="../img/Photos/Doctor.jpg" alt="image"  class=" w-50 rounded-3 mb-3">
+            <h5>Dr. Mohamed Sajid BDS</h5>
+          </div>
+          <h3>Founder & Chief Dental Surgeon</h3>
+
+          <p class="bulk-text-justify"><span class="fw-bold">Dr. Mohamed Sajid BDS</span> , an accomplished
+            implantologist, stands as the
+            visionary force behind Elegance Dental Care and Implant Centre. With a deep-rooted commitment to dental
+            excellence, Dr. Sajid initiated this center to bring forth a unique blend of expertise and compassionate
+            care. His specialization in implantology reflects a dedication to staying at the forefront of dental
+            advancements, ensuring that patients receive state-of-the-art treatments.
+            <br>
+
+            Under the able leadership of Dr. Mohamed Sajid, Elegance Dental Care and Implant Centre embody the essence
+            of elegance in both its name and practice. Driven by a passion for precision and patient satisfaction, Dr.
+            Sajid leads a team of skilled associates, collectively working to create a dental experience that resonates
+            with sophistication and quality care.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <section id="contact">
+    <div class="container pt-4">
+      <style>
+        .text-contact{
+          font-size: 1.12rem;
+        }
+      </style>
+
+      <h1 class="text-center text-primary">Contact us</h1>
+      
+      <div class="row pb-5 mt-3">
+        <div class="col-md-7 text-center">
+          <h5 class="fw-bold">Our Address</h5>
+          <p class="text-contact">
+            Elegant Dental Care and Implant Centre
+            <br>
+            Mulloor PO, Mukkola
+            <br>
+            Vizhinjam
+            <br>
+            Kerala- 695 521
+            <br>
+            
+          </p>
+          <p>
+            <span class="fw-bold">Opening hours</span> 
+            <br>
+            Mon-Sat: 10:00 am - 06:00 pm
+            <br>
+            Sunday closed
+          </p>
+        </div>
+        <div class="col-md-5 pl-2 text-center text-md-start">
+          <h5><i class="bi bi-telephone">           </i>Elegant Dental Care</h5>
+          <a href="tel:04712485550" class="text-decoration-none text-contact">0471 2485550</a>
+          <h5 class="pt-3"><i class="bi bi-phone">        </i> Dr. Mohamed Sajid</h5>
+          <a href="tel:+919947503040" class="text-decoration-none text-contact">+91 9947503040</a>
+          <a href="mailto:elegantdhc@gmail.com" class="text-decoration-none text-black "><h5 class="pt-3 pb-2"><i class="bi bi-envelope-at"></i> elegantdhc@gmail.com</h5></a>
+          <a href="https://wa.me/+919947503040" class="text-decoration-none text-contact text-primary"><span class="text-dark"><i class="bi bi-whatsapp"></span></i> +91 9947503040</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
 
-    <!--Bootstrap CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <!--footer-->
+
+  <footer id="footer" class="pt-4 pb-5 bg-dark bg-opacity-100">
+
+
+    <div class="container text-white">
+
+      <div class="copyright text-center">
+        &copy; Copyright <strong><span>2023 Elegant Dental Care & Implant Centre</span></strong>. All Rights Reserved.
+      </div>
+      <div class="credits text-center pb-2">
+
+        <a href="../html/credits.html" style="text-decoration: none;" class="text-white">view content credits <i
+            class="bi bi-play"></i></a>
+
+      </div>
+      <div class="credits text-center mt-2">
+
+        Design by <a href="https://wa.me/+919880642247" style="text-decoration: none;">Subin Sabu</a>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- Bootstrap & Popper CDNs-->
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+
 </body>
 
 </html>

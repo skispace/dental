@@ -66,6 +66,9 @@ body{
     }
   }
 
+
+  
+  /* cards pops up when mouse hovers over it */
   .card-pop{
     transition: transform 0.3s;
     border-color: rgba(108, 117, 125, 0.5);
@@ -76,6 +79,15 @@ body{
   }
 
 
+
+/* Used to 'justify' text in descriptive pages (for p tag) */
+.bulk-text-justify{
+  text-align: justify;
+}
+
+.text-left{
+  text-align: left;
+}
 
 
   
