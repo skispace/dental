@@ -2,111 +2,643 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <link rel="icon" href="../img/logo/Elegant favicon.png">
-    <!--Bootstrap CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Dental Care</title>
+
+  <!--icon-->
+  <link rel="icon" href="../img/logo/Elegant favicon.png">
+
+  <!--Bootstrap CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
 
 </head>
 
-<body class="bg-light">
 
-    <header class="text-center">
 
-        <div class="container">
 
-            <h1 class="text-primary m-3">Services offerered here</h1>
+<body>
 
-            <a href="../../index.html" class="btn btn-outline-danger">go to Home Page</a>
-           
+
+  <header class="header fixed-top bg-body-tertiary z-index: 100">
+
+    <div class=" container-fluid">
+      <div class=" row">
+        <!-- header left div -->
+        <div class="col-6 col-sm-4 col-lg-3 d-flex align-items-center justify-content-center">
+
+          <a href="../../index.html">
+            <img src="../img/logo/Elegant Logo full.png" alt="" class="img-fluid" style="max-height: 8em">
+          </a>
+
         </div>
-    </header>
 
-    <section>
-        <div class="container">
-            <div class="col p-4 border border-3 border-primary text-dark mt-5" id="implants">
+        <!-- header right div containing 2 rows -->
+        <div class="col-6 col-sm-8 col-lg-9">
+          <div class="container-fluid" style="height: 100%;">
 
-                <h3>Implants-description</h3>
-                <p>Photos may be incorporated here <br> What's the procedure? <br>Who should do this? <br></p>
-                <a href="../../index.html#appointment" class="btn btn-danger m-1">Book Appointment</a>
-                <a href="../../index.html" class="btn btn-success m-1">go to Home Page</a>
+            <!-- contact icon row (phone, whatsapp, mail)-->
+            <div class="row glow-container" style="height: 25%;">
+
+
+
+              <div class="col border m-1 text-center glow">
+                <a href="tel:+919947503040" class="text-primary text-decoration-none">
+                  <i class="bi bi-telephone"></i>
+                  <!-- hides phone number in screens below lg size -->
+                  <span class="d-none d-lg-inline">+91 9947503040</span>
+                </a>
+
+              </div>
+
+              <div class="col border m-1 text-center glow">
+                <a href="https://wa.me/+919947503040" class="text-success text-decoration-none">
+                  <i class="bi bi-whatsapp"></i>
+                  <!-- hides text in span in screens below lg size -->
+                  <span class="d-none d-lg-inline">chat on WhatsApp</span>
+                </a>
+              </div>
+              <div class="col border m-1 text-center glow">
+                <a href="mailto:elegantdhc@gmail.com" class="text-danger text-decoration-none ">
+                  <i class="bi bi-envelope-at"></i>
+                  <!-- hides email in screens below lg size -->
+                  <span class="d-none d-lg-inline">elegantdhc@gmail.com</span>
+                </a>
+              </div>
+
             </div>
-            <div class="col p-4 border border-3 border-secondary text-primary mt-5" id="root-canal">
 
-                <h3>root-canal-treatment</h3>
-                <p>1. Photos may be incorporated here <br>2. What's the procedure? <br>3. Who should do this? <br></p>
-                <a href="../../index.html#appointment" class="btn btn-danger m-1">Book Appointment</a>
-                <a href="../../index.html" class="btn btn-success m-1">go to Home Page</a>
-            </div>
-            <div class="col p-4 border border-3 border-primary text-success mt-5" id="dental-align">
+            <!-- Nav-bar row -->
+            <div class="row pt-3">
 
-                <h3>dental-alignment</h3>
-                <p>1. Photos may be incorporated here <br>2. What's the procedure? <br>3. Who should do this? <br></p>
-                <a href="../../index.html#appointment" class="btn btn-danger m-1">Book Appointment</a>
-                <a href="../../index.html" class="btn btn-success m-1">go to Home Page</a>
-            </div>
-        </div>
-    </section>
+              <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid justify-content-end">
+                  <!--<a class="navbar-brand" href="#">Offcanvas navbar</a>   -->
+
+                  <!--toggle btn-->
+                  <button class="navbar-toggler shadow-none border-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <!--offcanvas header-->
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">fast forward..</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!--offcanvas body-->
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-center flex-grow-1 pe-4">
+                        <!--Menu Items without drop-down-->
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../html/about.html">About</a>
+                        </li>
+                        <!--Menu Items with drop-down-->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="../html/services.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Specialities
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/services.html#implants">Dental Implants</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../html/services.html#dental-align">Dental Alignment</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../html/services.html#root-canal">Root-canal
+                                Treament</a></li>
+                            <li><a class="dropdown-item" href="../html/services.html#crowns">Crowns & Bridges</a></li>
+                            <li><a class="dropdown-item" href="../html/services.html#dentures">Dentures</a></li>
+                            <li><a class="dropdown-item" href="../html/services.html#restoration">Restorative
+                                Dentistry</a></li>
+                            <li><a class="dropdown-item" href="../html/services.html#sensitivity">Tooth Sensitivity</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../html/services.html#gum-disease">Gum Disease</a></li>
 
 
-    <!--FAQ Section-->
-    <section id="faq">
-        <section>
-            <div class="container">
-                <div class="col p-4  text-dark mt-5 mb-5 text-center fs-4">
-    
-                    <h3>Frequently Asked Questions</h3>
-                   
-                    
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../html/services.html">View All</a></li>
+                          </ul>
+                        </li>
+                        <!-- Gallery 
 
-                    <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                              Why should I do this treatment now?
-                            </button>
-                          </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Dental problems might worsen over time<code>. earlier the better!</code> </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                              How effective is root-canal treatment?
-                            </button>
-                          </h2>
-                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Well, we typically offer 10 years warranty.*(T&C apply) Contact us for more details</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                              How effective is smile designing?
-                            </button>
-                          </h2>
-                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body"> <code>lol..</code></div>
-                          </div>
-                        </div>
-                      </div>
+
+
+  
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="../html/gallery.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../html/gallery.html#photos">Photos</a></li>
+                            <li><a class="dropdown-item" href="../html/gallery.html#videos">Videos</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../html/gallery.html">View All</a></li>
+                          </ul>
+                        </li>
+
+
+
+                        -->
+
+                        <!--FAQ, Career, Testimonials-->
+
+                        <!--
+                        <li class="nav-item">
+                          <a class="nav-link" href="../html/gallery.html#testimonials">Testimonials</a>
+                        </li>
+                        -->
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="../html/services.html#faq">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../html/about.html#contact">Contact</a>
+                        </li>
+
+
+                      </ul>
+                      <hr>
+                      <a href="../../index.html#appointment" class="btn btn-danger rounded-4">Book Appointment</a>
+
+                    </div>
+                  </div>
                 </div>
-                
+              </nav>
+
             </div>
-        </section>
-    </section>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </header>
+
+
+  <section style="margin-top: 9rem;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h1 class="text-primary">Specialities</h1>
+      </div>
+
+      <!--1. Dental Implants-->
+
+      <div class="row border border-3 rounded-3 p-3 mx-3 mx-lg-0 my-3" id="implants">
+        <h3 class="text-primary text-center text-lg-start">Dental Implants</h3>
+        <div class="col-lg-6">
+
+
+          <h4>Overview</h4>
+          <p class="bulk-text-justify">When a tooth is lost due to injury or disease, a person can experience
+            complications such as rapid bone
+            loss, defective speech, or changes to chewing patterns that result in discomfort. Replacing a lost tooth
+            with a dental implant can significantly improve the patient's quality of life and health.
+            <br>
+            Dental implant systems consist of a dental implant body and dental implant abutment and may also include an
+            abutment fixation screw. The dental implant body is surgically inserted in the jawbone in place of the
+            tooth's root. The dental implant abutment is usually attached to the implant body by the abutment fixation
+            screw and extends through gums into the mouth to support the attached artificial teeth.
+          </p>
+          <h4>Benefits of dental implants</h4>
+          <ul>
+            <li>Restores the ability to chew</li>
+            <li>Restores cosmetic appearance</li>
+            <li>Helps keep the jawbone from shrinking due to bone loss</li>
+            <li>Preserves the health of the surrounding bone and gums</li>
+            <li>Helps keep adjacent (nearby) teeth stable</li>
+            <li>Improves quality of life</li>
+          </ul>
+          <h4>Recommendations</h4>
+          <p><strong>Before </strong> choosing dental implants, talk to us and know the potential benefits and risks,
+            and whether you are a candidate for the procedure.
+            <br>
+            Things to consider:
+          </p>
+          <ul>
+            <li>Your overall health is an important factor in determining whether you are a good candidate for dental
+              implants, how long it will take to heal, and how long the implant may stay in place.</li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-6">
+          <div class="p-3" id="#">
+            <img src="../img/specialities/dental implant.jpg" alt="image" class=" w-100 rounded-3 mb-3 text-center">
+            <p class="text-center text-secondary">source: fda.gov</p>
+
+            <ul>
+              <li>Smoking may affect the healing process and decrease the long-term success of the implant.</li>
+              <li>The healing process for the implant body may take several months or longer, during which time you
+                typically have a temporary abutment in place of the tooth.</li>
+            </ul>
+
+            <p><strong>After </strong>the dental implant procedure:</p>
+            <ul>
+              <li>Carefully follow the oral hygiene instructions given to you by your doctor. Regularly cleaning the
+                implant and surrounding teeth is very important for long-term success of the implant.</li>
+              <li>Schedule periodic visits with us</li>
+              <li>If your implant feels loose or painful, tell us right away</li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!--2. Root Canal-->
+
+
+      <div class="row border border-3 rounded-3 p-3 mx-3 mx-lg-0 my-3" id="root-canal">
+        <h3 class="text-primary text-center text-lg-start">Root Canal Treatment</h3>
+
+
+        <div class="col-lg-6">
+          <h4>Overview</h4>
+          <p>A root canal treatment is a dental procedure to remove inflamed or infected pulp on the inside of the tooth
+            which is then carefully cleaned and disinfected, then filled and sealed. Root canal treatment is designed to
+            eliminate bacteria from the infected root canal, prevent reinfection of the tooth and save the natural
+            tooth.
+          </p>
+          <h4>Benefits</h4>
+          <p>Saving the natural tooth with root canal treatment has many advantages:</p>
+          <ul>
+            <li>Removes infection and pain</li>
+            <li>Efficient chewing</li>
+            <li>Normal biting force and sensation</li>
+            <li>Natural appearance</li>
+            <li>Protects other teeth from excessive wear or strain</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Procedure</h4>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/JLeiDmOVfcg" title="Root Canal Treatment Step by Step"
+              allowfullscreen></iframe>
+          </div>
+          <p class="text-center text-secondary">source: aae.org</p>
+        </div>
+
+      </div>
+
+      <!--3. Dental Alignment-->
+
+      <div class="row border border-3 rounded-3 p-3 mx-3 mx-lg-0 my-3" id="dental-align">
+        <h3 class="text-primary text-center text-lg-start">Dental Alignment</h3>
+
+
+        <div class="col-lg-6">
+          <h4>Overview</h4>
+          <p>If you’re an adult considering treatment options for getting your teeth straightened — you’re in luck —
+            because there are several available methods to look into to resolve a wide range of possible orthodontic
+            issues. Whether you had braces earlier in life, have recently noticed a change in the placement of your
+            teeth, or have an overbite that’s causing discomfort, more adults are seeking tooth straightening solutions
+            than ever before.
+          </p>
+          <h4>Straightening options</h4>
+          <p>There are many different teeth straightening options for adults today. Here are some of the available
+            options:</p>
+          <ul>
+            <li>Traditional Braces</li>
+            <li>Self-Ligating Braces</li>
+            <li>Lingual Braces</li>
+            <li>Clear Aligners, Including Invisalign and SureSmile</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Benefits</h4>
+          <ul>
+            <li><strong>Improved Appearance and Self-Esteem</strong>: Its makes sense that many people want to enhance
+              their appearance by improving their smile. Our appearance can contribute greatly to how we feel about
+              ourselves and how we present socially, so feeling confident with your appearance can help our self-esteem
+              to soar. Having a healthy, great looking smile boosts your confidence in social situations and
+              professional settings</li>
+            <li><strong>Physical Health Benefits</strong> : When your teeth are spaced too widely apart, your gums can
+              become red and inflamed. Contrarily, if your teeth are crooked or over crowded they can be difficult to
+              clean, leading to plaque build up and tooth decay. Therefore, straightening your smile can reduce health
+              risks and improve oral hygiene</li>
+            <li><strong>Resolve jaw problems</strong>: Braces are also a solution for jaw problems. When the teeth don’t
+              come together correctly — such as a significant overbite or underbite — when the jaws close, this creates
+              a “bad bite” (we call it malocclusion) and it can cause issues when chewing or swallowing. Teeth
+              straighteners can resolve all of these issues.</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--4. Crowns and Bridges-->
+
+      <div class="row border border-3 rounded-3 p-3 mx-3 mx-lg-0 my-3" id="crowns">
+        <h3 class="text-primary text-center text-lg-start">Crowns and Bridges</h3>
+
+
+        <div class="col-lg-6">
+          <h4>What are Dental Crowns?</h4>
+          <p>Dental crowns are tooth-shaped caps that are placed over the tooth. With these caps, it restores the
+            tooth’s shape, size, and appearance. Dental crowns may be needed to protect a weak tooth, restore a broken
+            or chipped tooth, hold a dental bridge in place, cover an implant, and cover a tooth treated for a root
+            canal. Millions of people use crowns as a way to correct and heal their teeth, and they can be made from
+            four types of materials.
+          </p>
+          <h4>Types of Dental Crowns</h4>
+          <img src="../img/specialities/dental-crowns.jpg" alt="image" class="img-fluid">
+          <p class="text-center text-secondary">source: dentakay.com</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Dental Bridges</h4>
+          <p>Bridges are a collection of false teeth held in place by teeth on either side of the gap. For those with
+            multiple missing teeth, bridges can provide a viable solution. Bridges can replace one tooth, or replace
+            multiple teeth, and depending on the material, can give off a natural look to your teeth. Teeth with decay,
+            physical damage, and abscess are most often treated with these kinds of appliances.</p>
+          <img src="../img/specialities/dental-bridges.jpg" alt="image" class="img-fluid">
+          <p class="text-center text-secondary">source: nearbydental.com</p>
+          <p>We prioritize precision and aesthetics to ensure your crowns and bridges seamlessly blend with your natural
+            teeth. Reach out to us today for a consultation, and let us guide you towards a confident and radiant smile
+            that lasts a lifetime.</p>
+        </div>
+
+      </div>
+
+
+      <!--5. Dentures-->
+
+
+      <div class="row border border-3 rounded-3 p-3 mx-3 mx-lg-0 my-3" id="dentures">
+        <h3 class="text-primary text-center text-lg-start">Dentures</h3>
+
+
+        <div class="col-lg-6">
+          <h4>Overview</h4>
+          <p>Dentures are removable false teeth made of acrylic (plastic), nylon or metal. They fit snugly over the gums
+            to replace missing teeth and eliminate potential problems caused by gaps. Gaps left by missing teeth can
+            cause problems with eating and speech, and teeth either side of the gap may grow into the space at an
+            angle.Sometimes all the teeth need to be removed and replaced.
+            <br>
+            You may therefore need either:
+          </p>
+          <ul>
+            <li><strong>Complete dentures</strong>: (a full set) – which replace all your upper or lower teeth, or</li>
+            <li><strong>Partial dentures</strong>: – which replace just 1 tooth or a few missing teeth</li>
+          </ul>
+
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <img src="../img/specialities/dentures.jpg" alt="image" class="img-fluid">
+          <p class="text-center text-secondary">source: my.clevelandclinic.org</p>
+
+        </div>
+
+      </div>
+
+
+      <!--6. Dental Caries Restoration-->
+
+      <div class="row border border-3 rounded-3 p-3 mx-3 mx-lg-0 my-3" id="restoration">
+        <h3 class="text-primary text-center text-lg-start">Restorative Dentistry</h3>
+
+
+        <div class="col-lg-6">
+          <h4>What's that?</h4>
+          <p>Restorative dentistry focuses on repairing or replacing teeth. The main goal of restorative dentistry is to
+            improve oral health and chewing function.
+          </p>
+          <h4>Who needs restoration?</h4>
+          <p>You may need restorative dentistry if you have:</p>
+          <ul>
+            <li>Cavities/tooth decay</li>
+            <li>Damaged or broken teeth</li>
+            <li>Missing teeth</li>
+          </ul>
+          <h4>Types of dental restoration</h4>
+          <p>There are several different types of dental restorations depending on your unique oral health needs. Its an
+            umbrella term that comprises of:</p>
+
+
+        </div>
+
+        <div class="col-lg-6">
+          <ul>
+            <li><strong>Fillings</strong>: When bacteria eats away your tooth enamel and causes a hole, it’s called a
+              cavity. Smaller cavities are usually repaired with dental fillings.
+              <br>
+              During this procedure, we remove the decayed portion of your tooth, then fills in the hole with
+              a tooth-colored composite material. This halts the progression of tooth decay and reduces the risk of
+              further damage.
+            </li>
+            <li><strong>Crowns and Bridges</strong>: : <a href="../html/services.html#crowns">click here to read
+                more</a></li>
+            <li><strong>Inlays and onlays</strong>: Sometimes a cavity is too big for a filling, but too small for a
+              crown. In a case like this, we might recommend an inlay or onlay. These custom restorations fit into your
+              natural tooth structure like puzzle pieces. We permanently bond them into place.
+
+              Inlays and onlays are similar. While an inlay fills the area between the cusps of your teeth, an onlay
+              also covers at least one cusp.</li>
+            <li><strong>Root canal treatment</strong>: <a href="../html/services.html#root-canal">click here to read
+                more</a></li>
+            <li><strong>Dental Implants</strong>: <a href="../html/services.html#implants">click here to read more</a>
+            </li>
+            <li><strong>Dentures</strong>: <a href="../html/services.html#dentures">click here to read more</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!--7. Tooth Sentivity-->
+
+      <div class="row border border-3 rounded-3 p-3 mx-3 mx-lg-0 my-3" id="sensitivity">
+        <h3 class="text-primary text-center text-lg-start">Tooth Sensitivity</h3>
+
+
+        <div class="col-lg-6">
+          <h4>Symptoms</h4>
+          <p>You may have ‘ouch’ moments (discomfort or pain) when:
+          </p>
+          <ul>
+            <li>You’re having a hot drink or eating an ice-cream</li>
+            <li>You’re eating something sour or very sweet</li>
+            <li>You bite down on something</li>
+            <li>An ache or pain persists well after the initial twinges</li>
+          </ul>
+          <p>If you experience any of these symptoms, feel free to reach out to us and we are happy to answer to your
+            queries</p>
+
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <h4>Why does it occur?</h4>
+          <p>The reason why teeth feel sensitive is because the layer of dentine within the tooth has been exposed. This
+            is because the protective enamel, on the surface of the tooth, has been damaged.
+
+            Dentine contains lots of very tiny holes which run through to the tooth's nerve. This indirect exposure of
+            the nerve is why you feel sudden tooth sensitivity or pain.</p>
+
+        </div>
+
+      </div>
+
+      <!--8. Gum Diseases-->
+
+
+      <div class="row border border-3 rounded-3 p-3 mx-3 mx-lg-0 my-3" id="gum-disease">
+        <h3 class="text-primary text-center text-lg-start">Gum Disease</h3>
+
+
+        <div class="col-lg-6">
+          <h4>Overview</h4>
+          <p>Periodontal (gum) disease is an infection of the tissues that hold your teeth in place. It's typically
+            caused by poor brushing and flossing habits that allow plaque—a sticky film of bacteria—to build up on the
+            teeth and harden. </p>
+          <h4>Symptoms</h4>
+          <p>It starts with swollen, red, and bleeding gums. If left untreated, it can spread to the bones surrounding
+            the gums, making it painful to chew. In the worst cases, teeth may become loose or need to be removed.</p>
+
+        </div>
+
+        <div class="col-lg-6">
+
+
+          <div class="ratio ratio-16x9 p-2">
+            <iframe src="https://www.youtube.com/embed/Jcd2sCgFhh4" title="Periodontal (Gum) Disease"
+              allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+      </div>
 
 
 
 
-    <!--Bootstrap CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+
+
+
+    </div>
+  </section>
+
+
+<!--FAQ Section-->
+<section id="faq">
+  <section>
+      <div class="container">
+          <div class="col p-4  text-dark mt-5 mb-5 text-center fs-4">
+
+              <h3>Frequently Asked Questions</h3>
+             
+              
+
+              <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Why should I do this treatment now?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Dental problems might worsen over time<code>. earlier the better!</code> </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        How effective is root-canal treatment?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Well, we typically offer 10 years warranty.*(T&C apply) Contact us for more details</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        How effective is smile designing?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"> <code>lol..</code></div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          
+      </div>
+  </section>
+</section>
+
+
+
+
+
+
+
+  <!--footer-->
+
+  <footer id="footer" class="pt-4 pb-5 bg-dark bg-opacity-100">
+
+
+    <div class="container text-white">
+
+      <div class="copyright text-center">
+        &copy; Copyright <strong><span>2023 Elegant Dental Care & Implant Centre</span></strong>. All Rights Reserved.
+      </div>
+      <div class="credits text-center pb-2">
+
+        <a href="../html/credits.html" style="text-decoration: none;" class="text-white">view content credits <i
+            class="bi bi-play"></i></a>
+
+      </div>
+      <div class="credits text-center mt-2">
+
+        Design by <a href="https://wa.me/+919880642247" style="text-decoration: none;">Subin Sabu</a>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- Bootstrap & Popper CDNs-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+
 </body>
 
 </html>
