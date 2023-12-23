@@ -96,6 +96,13 @@ body{
   
 
 
+/* color change for carousel text on home-page for better readability  */
+.color-change{
+  text-shadow: 2px 2px 4px #434141;
+  
+}
+
+
 
 
 
